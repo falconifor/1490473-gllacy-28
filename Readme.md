@@ -1,11 +1,11 @@
 # Личный проект «Глейси»
 
 * Студент: [Сиваева Ольга](https://up.htmlacademy.ru/htmlcss/28/user/1490473).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
+Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
 ---
