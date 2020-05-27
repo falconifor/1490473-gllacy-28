@@ -9,23 +9,53 @@
         <img src="img/logoG.svg" width="154" height="64" alt="Логотип магазина Глэйси">
         <nav>
           <ul>
-            <li><a href="inner.html">Каталог</a></li>
+            <li>
+                <button type="button">Каталог</button>
+                <select name="catalog">
+                    <option value="new">Новинки</option>
+                    <option value="creamy">Сливочное</option><!--должно быть ссылкой на главную-->
+                    <option value="sherbet">Щербеты</option>
+                    <option value="fruit-ice">Фруктовый лёд</option>
+                    <option value="melorin">Мелорин</option>
+                </select>
+            </li>
             <li><a href="">Доставка и оплата</a></li>
             <li><a href="">О компании</a></li>
           </ul>
           <ul>
             <li>
-            <button type="button"><img src="img/search.svg" width="16" height="16" alt="Поиск"></button>
-              <!--Здесь будет форма поиска-->
+              <form action="https://echo.htmlacademy.ru" method="post">
+              <button type="button"><img src="img/search.svg" width="16" height="16" alt="Поиск"></button>
+              <label for="search"></label>
+              <input id="search" type="text" placeholder="Крем-брюле">
+              <button type="submit">Поиск</button>
+            </form>
             </li>
             <li>
-            <img src="img/login.svg" width="20" height="19" alt="Вход"><a href="">Вход</a> 
-              <!--Здесь будет форма для авторизации-->
+             <img src="img/login.svg" width="20" height="19" alt="Вход"><a href="">Вход</a> 
+              <form action="https://echo.htmlacademy.ru" method="post">
+               <p>
+               <!--<label for="login-login">Логин</label>-->
+                <input id="login-login" type="email" placeholder="email@example.com" required>
+                </p>
+               <p>
+                <!--<label for="password">Пароль</label>-->
+                <input id="login-password" type="password" name="password" placeholder="......" required>
+                </p>
+                <a href="">Забыли пароль?</a>
+                <a href="">Новая регистрация</a>
+                <button type="submit">Войти</button>
+              </form>
+              <button type="button">Закрыть</button><!--ее не видно на макете-->
             </li>
             <li>
               <img src="img/basket.svg" width="21" height="20" alt="Корзина"><a href="">Корзина</a>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <!--здесь будут поля формы корзины-->
+                <button type="submit">Оформить заказ</button>
+              </form>
             </li>
-        </ul>
+          </ul>                  
     </nav>
     <nav>
     <ol>
@@ -43,7 +73,77 @@
   <main>
     <h1>Сливочное мороженое</h1>
     <section>
-    <!--Здесь будет форма фильтра для поиска-->
+    <h2>Фильтр товаров</h2>
+    <form action="https:echo.htmlacademy.ru" method="get">
+        <fieldset>
+            <legend>Сортировка:</legend>
+            <select name="sorting">
+            <option value="popular">по популярности</option>
+            <option value="inexpensive-first">сначала недорогие</option>
+            <option value="expensive-first">сначала дорогие</option>
+            <option value="by-fat-content">по жирности</option>
+            </select>
+        </fieldset>
+        <!--<fieldset>
+            <legend>Цена: 100Р-500Р</legend>
+        </fieldset>-->
+        <fieldset>
+            <legend>Жирность:</legend>
+            <ul>
+            <li>
+                <label>
+                    <input type="radio" name="fat" value="0%">0%
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="fat" value="befor10%" checked>до 10%
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="fat" value="befor30%">до 30%
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="fat" value="higher30%">выше 30%
+                </label>
+            </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+        <legend>Наполнители:</legend>
+        <ul>
+        <li>
+            <label>
+                <input type="checkbox" name="chocolate" checked>шоколадные
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="sugar-powder" checked>сахарные присыпки
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="fruit">фрукты
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="syrup">сиропы
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="jam">джемы
+            </label>
+        </li>
+        </ul>
+        </fieldset>
+        <button type="submit">Применить</button>  
+    </form>
     </section>
     <section>
     <ul>
@@ -100,7 +200,7 @@
   </main>
     <footer>
         <ul>
-            <li><!--А можно ли вкладывать <img> в <a></a> ?! то же самое сделала с лого академии и соотвественно на второй странице оно же-->
+            <li>
               <a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Фэйсбук"></a>
             </li>
             <li>

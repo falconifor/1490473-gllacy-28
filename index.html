@@ -9,21 +9,51 @@
   <img src="img/logoG.svg" width="154" height="64" alt="Логотип магазина Глэйси">
   <nav>
     <ul>
-      <li><a href="inner.html">Каталог</a></li>
+      <li>
+        <button type="button">Каталог</button>
+        <select name="catalog">
+          <option value="new">Новинки</option>
+          <option value="creamy">Сливочное</option><!--Должна быть ссылкой на главную-->
+          <option value="sherbet">Щербеты</option>
+          <option value="fruit-ice">Фруктовый лёд</option>
+          <option value="melorin">Мелорин</option>
+                </select>
+      
       <li><a href="">Доставка и оплата</a></li>
       <li><a href="">О компании</a></li>
     </ul>
     <ul>
       <li>
+        <form action="https://echo.htmlacademy.ru" method="post">
         <button type="button"><img src="img/search.svg" width="16" height="16" alt="Поиск"></button>
-        <!--Здесь будет форма поиска-->
+        <label for="search"></label>
+        <input id="search" type="text" placeholder="Крем-брюле">
+        <button type="submit">Поиск</button>
+      </form>
       </li>
       <li>
        <img src="img/login.svg" width="20" height="19" alt="Вход"><a href="">Вход</a> 
-        <!--Здесь будет форма для авторизации-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+         <p>
+         <!--<label for="login-login">Логин</label>-->
+          <input id="login-login" type="email" placeholder="email@example.com" required>
+          </p>
+         <p>
+          <!--<label for="password">Пароль</label>-->
+          <input id="login-password" type="password" name="password" placeholder="......" required>
+          </p>
+          <a href="">Забыли пароль?</a>
+          <a href="">Новая регистрация</a>
+          <button type="submit">Войти</button>
+        </form>
+        <button type="button">Закрыть</button><!--ее не видно на макете-->
       </li>
       <li>
         <img src="img/basket.svg" width="21" height="20" alt="Корзина"><a href="">Корзина</a>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <!--здесь будут поля формы корзины-->
+        <button type="submit">Оформить заказ</button>
+        </form>
       </li>
     </ul>
   </nav>
@@ -96,6 +126,9 @@
   <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
   <!--Здесь будет форма отравки email
   <button type="submit">Отправить</button>-->
+  <form action="" method="post">
+    
+  </form>
   </article>
   <section>
     <h2>Контактная информация</h2>
@@ -106,12 +139,29 @@
       Для заказов по телефону:<br> 8 812 450-25-25<br> (с 10 до 20 ежедневно)
     </p>
     <!--Здесь будет форма обратной связи-->
+    <button type="button" >Закрыть</button>
+    <p>Мы обязательно вам ответим!</p>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+       <!--<label for="communication-name">Имя Фамилия</label>-->
+       <input id="communication-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <!--<label for="communication-email">email</label>-->
+        <input id="communication-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+       <!--<label for="communication-message">Текст сообщения</label>-->
+        <input id="communication-message" type="text" name="message" placeholder="В свободной форме">
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
     <img src="img/map.png" width="1200" height="430" alt="Карта чтобы нас найти"><img src="img/pin.svg" width="80" height="140" alt="Мы здесь!">
   </section>
   </main>
   <footer>
      <ul>
-       <li><!--А можно ли вкладывать <img> в <a></a> ?! то же самое сделала с лого академии и соотвественно на второй странице оно же-->
+       <li>
          <a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Фэйсбук"></a>
        </li>
        <li>
