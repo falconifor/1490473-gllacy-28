@@ -3,18 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page-body">
+  <body>
     <header>
         <img src="img/logoG.svg" width="154" height="64" alt="Логотип магазина Глэйси">
-        <nav class="main-navigation">
-          <ul class="site-navigation">
+        <nav>
+          <ul>
             <li>
               <a href="inner.html">Каталог</a>
-              <ul class="catalog">
+              <ul>
                 <li> <a href="">Новинки</a></li>
                 <li><a href="inner.html">Сливочное</a></li>
                 <li><a href="">Щербеты</a></li>
@@ -25,7 +22,7 @@
             <li><a href="">Доставка и оплата</a></li>
             <li><a href="">О компании</a></li>
           </ul>
-          <ul class="user-navigation">
+          <ul>
             <li>
               <form action="https://echo.htmlacademy.ru" method="post">
               <button type="button"><img src="img/search.svg" width="16" height="16" alt="Поиск"></button>
@@ -85,27 +82,27 @@
           </ul>                  
     </nav>
     <nav>
-    <ol class="inner">
+    <ol>
      <li><a href="index.html">Главная</a></li>
      <li><a href="inner.html">Каталог</a></li>
      <li><a href="inner.html">Сливочное</a></li>
     </ol>
     </nav>
-    <section class="filter">
+    <section>
         <h2>Информация</h2>
-        <p class="information">c 10 до 20, ежедневно<br>
-        <span>8 812 450 -25-25</span></p>
+        <p>c 10 до 20, ежедневно<br>
+        8 812 450 -25-25</p>
     </section>
   </header>    
   <main>
-    <h1 class="ice-cream">Сливочное мороженое</h1>
+    <h1>Сливочное мороженое</h1>
     <section>
     <h2>Фильтр товаров</h2>
     <form action="https:echo.htmlacademy.ru" method="get">
         <fieldset>
             <legend>Сортировка:</legend>
-            <select name="sorting" class="sorting">
-            <option value="popular" class="popular">по популярности</option>
+            <select name="sorting">
+            <option value="popular">по популярности</option>
             <option value="inexpensive-first">сначала недорогие</option>
             <option value="expensive-first">сначала дорогие</option>
             <option value="by-fat-content">по жирности</option>
@@ -116,7 +113,7 @@
         </fieldset>-->
         <fieldset>
             <legend>Жирность:</legend>
-            <ul class="fat">
+            <ul>
             <li>
                 <label>
                     <input type="radio" name="fat" value="0%">0%
@@ -173,45 +170,45 @@
     </form>
     </section>
     <section>
-    <ul class="product">
+    <ul>
         <li>
-         <p>Сливочное с апельсиновым джемом и цитрусовой стружкой <span class="price">310Р</span>/<span class="weight">кг</span>
+         <p>Сливочное с апельсиновым джемом и цитрусовой стружкой 310р/кг
          <img src="img/hit1.jpg" width="267" height="267"  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></p>
         </li>
         <li>
-         <p>Сливочное с брусничным джемом <span class="price">325 Р</span><span class="weight">/кг</span><img src="img/lingoberry.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"></p>
+         <p>Сливочное с брусничным джемом 325 р/кг<img src="img/lingoberry.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"></p>
         </li>
         <li>
-        <p>Сливочно-ванильное с кусочками шоколада <span class="price">440 P</span><span class="weight">/кг</span><img src="img/vanilla.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></p>
+        <p>Сливочно-ванильное с кусочками шоколада 440 р/кг<img src="img/vanilla.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></p>
         </li>
         <li>
-        <p>Сливочно-кофейное с кусочками шоколада <span class="price">389 P</span><span class="weight">/кг</span><img src="img/hit2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></p>
+        <p>Сливочно-кофейное с кусочками шоколада 389 р/кг<img src="img/hit2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></p>
         </li>
         <li>
-        <p>Сливочно-черничное с цельными ягодами черники <span class="price">410 P</span><span class="weight">/кг</span><img src="img/blueberries.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></p>
-        </li> 
-        <li>
-        <p>Сливочное с ментоловым сиропом <span class="price">435 P<span class="weight">/кг</span><img src="img/mentol.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом"></p>
+        <p>Сливочно-черничное с цельными ягодами черники 410 р/кг<img src="img/blueberries.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></p>
         </li>
         <li>
-        <p>Сливочно-клубничное с присыпкой из белого шоколада <span class="price">355 P</span><span class="weight">/кг</span><img src="img/hit3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></p>
+        <p>Сливочное с ментоловым сиропом 435р/кг<img src="img/mentol.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом"></p>
         </li>
         <li>
-        <p>Сливочно-лимонное с карамельной присыпкой <span class="price">315 P</span><span class="weight">/кг</span><img src="img/lemon.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></p>
+        <p>Сливочно-клубничное с присыпкой из белого шоколада 355 р/кг<img src="img/hit3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></p>
         </li>
         <li>
-       <p>Сливочное с кусочками черного шоколада <span class="price">355 P</span><span class="weight">/кг</span><img src="img/pieces_of_chocolate.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></p>
+        <p>Сливочно-лимонное с карамельной присыпкой 315 р/кг<img src="img/lemon.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></p>
         </li>
         <li>
-        <p>Сливочное крем-брюле с карамельной подливкой <span class="price">415 P</span><span class="weight>">/кг</span><img src="img/hit4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
+       <p>Сливочное с кусочками черного шоколада 355 р/кг<img src="img/pieces_of_chocolate.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></p>
+        </li>
+        <li>
+        <p>Сливочное крем-брюле с карамельной подливкой 415 р/кг<img src="img/hit4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
         
         </li>
         <li>
-        <p>Сливочное с шоколадной стружкой <span class="price" >320 P</span><span class="weight">/кг</span><img src="img/chocolate_chips.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"></p>
+        <p>Сливочное с шоколадной стружкой 320 р/кг<img src="img/chocolate_chips.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"></p>
     
         </li>
         <li>
-        <p>Сливочное с мятным сиропом <span class="price">420 P</span><span class="weight">кг</span> <img src="img/mint.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"></p>
+        <p>Сливочное с мятным сиропом<img src="img/mint.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"></p>
         </li>
     </ul>
     </section>
@@ -240,12 +237,9 @@
               <a href="#"><img src="img/twiter.svg" width="32" height="32" alt="Твитер"></a>
             </li>
           </ul>
-           <ul class="documents">
+           <ul>
              <li>
-               <img src="img/heart.svg" width="15" height="13">
-             </li>
-             <li class="for-provider">
-               <a href="">Для поставщиков</a>
+               <img src="img/heart.svg" width="15" height="13"><a href="">Для поставщиков</a>
              </li>
              <li>
                <a href="">О производстве</a>
@@ -258,7 +252,7 @@
              </li>
            </ul>
          <p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" id="htmlacademy">Сделано в <span>HTML Academy</span>.2019</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy.2019</a>
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_html_academy.svg" width="108" height="39" alt="Логотип HTML Academy"></a> 
         </p>
   </footer>
